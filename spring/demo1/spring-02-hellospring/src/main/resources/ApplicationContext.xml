@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- 使用spring创建对象 在spring这些都称为bean
+         这几行代码相当于
+         YangFan hello =new YangFan();
+
+         属性赋值是通过类里面的set方法
+         所以必须有set方法
+         不然会报错
+    -->
+    <bean id="hello" class="com.yuan.pojo.YangFan">
+        <property name="age" value="21"/>
+        <property name="height" value="160" />
+        <property name="weight" value="47"/>
+    </bean>
+</beans>

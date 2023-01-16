@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+       private Student student;
+            private String school;
+            private int level;
+
+       private ArrayList<String>hoppy;
+       private Student []friends;
+       private Map<String,Integer>score;
+       private Set<String>books;
+       private String Null;
+       private Properties properties;
+    -->
+    <bean id="yangfan" class="com.yuan.pojo.YangFan">
+        <property name="student" ref="student1"/>
+
+        <property name="friends">
+            <array>
+                <ref bean="student1"/>
+                <ref bean="student2"/>
+            </array>
+        </property>
+
+        <property name="hoppy">
+
+
+            <list>
+                <value>123</value>
+                <value>321</value>
+            </list>
+        </property>
+
+        <property name="score">
+            <map>
+                <entry key="math" value="110"/>
+                <entry key="english" value="70"/>
+                <entry key="politics"  value="70"/>
+                <entry key="408" value="80"/>
+            </map>
+        </property>
+
+        <property name="books">
+            <set>
+                <value>从一到无穷大</value>
+                <value>三体</value>
+            </set>
+        </property>
+
+        <property name="null">
+            <null/>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="id">2220192944</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="student1" class="com.yuan.pojo.Student">
+            <property name="level" value="2"/>
+         <property name="school" value="天津外国语大学"/>
+    </bean>
+
+    <bean id="student2" class="com.yuan.pojo.Student">
+        <property name="level" value="2"/>
+        <property name="school" value="大连海事大学"/>
+    </bean>
+
+
+
+
+
+</beans>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+
+<!--namespace 对应接口的名字-->
+<mapper namespace="org.example.dao.UserMapper">
+        <resultMap id="userMap" type="user">
+
+                <result column="pwd" property="password"/>
+        </resultMap>
+<!--    id是接口中对应的方法名  resultType 是返回值的类型 parameterType是参数的类型-->
+        <select id="getUserByLimit" parameterType="map" resultMap="userMap">
+                select * from User limit #{StartIndex},#{PageSize};
+
+        </select>
+
+
+
+
+
+
+    <!--
+            
+    因为配置文件默认是在resource下
+    所以这个配置文件会找不到
+    需要去pom。xml中配置资源过滤
+
+    -->
+
+</mapper>

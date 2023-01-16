@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<!--namespace 对应接口的名字-->
+<mapper namespace="org.example.dao.UserMapper">
+<!--    id是接口中对应的方法名  resultType 是返回值的类型 parameterType是参数的类型-->
+    <resultMap id="UserMap" type="User">
+<!--        <result column="id" property="id"/>-->
+<!--        <result column="name" property="name"/>-->
+<!--        一样的可以不写-->
+        <result column="pwd" property="password"/>
+    </resultMap>
+
+
+
+    <select id="getUserById" resultMap="UserMap" parameterType="java.lang.Integer">
+        select * from User where id=#{id};
+    </select>
+
+
+    <!--
+            
+    因为配置文件默认是在resource下
+    所以这个配置文件会找不到
+    需要去pom。xml中配置资源过滤
+
+    -->
+
+</mapper>

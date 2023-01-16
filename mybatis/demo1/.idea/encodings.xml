@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/mybatis-01-HelloMybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-01-HelloMybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-02-ConfigurationOptimization/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-02-ConfigurationOptimization/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-03-ResultMap/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-03-ResultMap/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-03-ad/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-03-ad/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-04-log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-04-log/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-05-paging/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-05-paging/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-06-annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-06-annotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="yangFan" class="com.yuan.pojo.YangFan" >
+        <property name="age" value="18"/>
+    </bean>
+    <bean id="yuanJialin" class="com.yuan.pojo.YuanJialin" >
+        <property name="age" value="8"/>
+    </bean>
+
+    <bean id="lovers" class="com.yuan.pojo.Lovers" autowire="byName">
+        <property name="period" value="100"/>
+
+    </bean>
+
+    <!--
+    byName:通过找set方法
+
+     public void setYangFan(YangFan yangFan) {
+        this.yangFan = yangFan;
+    }
+
+    通过比较set后的值  和配置文件里各beans的id 匹配则自动装配
+
+    -->
+
+
+
+</beans>
