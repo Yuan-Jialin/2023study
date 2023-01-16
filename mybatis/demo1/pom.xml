@@ -16,6 +16,8 @@
         <module>mybatis-04-log</module>
         <module>mybatis-05-paging</module>
         <module>mybatis-06-annotation</module>
+        <module>plugin-lombok</module>
+
     </modules>
 
     <properties>

@@ -11,6 +11,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/mybatis-03-ad/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis-06-annotation/plugin-lombok/pom.xml" />
       </set>
     </option>
   </component>
