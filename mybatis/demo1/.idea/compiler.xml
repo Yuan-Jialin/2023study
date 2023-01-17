@@ -10,6 +10,7 @@
         <module name="plugin-lombok" />
         <module name="mybatis-03-ResultMap" />
         <module name="mybatis-07-ComplexSql" />
+        <module name="test" />
         <module name="mybatis-01-HelloMybatis" />
         <module name="mybatis-02-ConfigurationOptimization" />
         <module name="mybatis-05-paging" />
