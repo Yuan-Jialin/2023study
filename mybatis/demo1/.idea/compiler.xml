@@ -2,12 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="plugin-lombok" />
         <module name="mybatis-03-ResultMap" />
+        <module name="mybatis-07-ComplexSql" />
         <module name="mybatis-01-HelloMybatis" />
         <module name="mybatis-02-ConfigurationOptimization" />
         <module name="mybatis-05-paging" />
