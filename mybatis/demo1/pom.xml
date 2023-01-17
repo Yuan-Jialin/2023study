@@ -17,8 +17,9 @@
         <module>mybatis-05-paging</module>
         <module>mybatis-06-annotation</module>
         <module>plugin-lombok</module>
-        <module>mybatis-07-ComplexSql</module>
-        <module>test</module>
+        <module>mybatis-07-ComplexSqlManyToOne</module>
+        <module>mybatis-08-ComplexSqlOneToMany</module>
+
 
     </modules>
 

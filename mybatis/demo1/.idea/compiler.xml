@@ -9,18 +9,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="plugin-lombok" />
         <module name="mybatis-03-ResultMap" />
-        <module name="mybatis-07-ComplexSql" />
-        <module name="test" />
+        <module name="mybatis-08-ComplexSqlOneToMany" />
         <module name="mybatis-01-HelloMybatis" />
         <module name="mybatis-02-ConfigurationOptimization" />
         <module name="mybatis-05-paging" />
         <module name="mybatis-06-annotation" />
         <module name="mybatis-04-log" />
+        <module name="mybatis-07-ComplexSqlManyToOne" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="algorithm" target="19" />
       <module name="mybatis-03-ad" target="11" />
+      <module name="test" target="19" />
     </bytecodeTargetLevel>
   </component>
 </project>

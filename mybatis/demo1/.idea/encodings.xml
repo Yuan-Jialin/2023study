@@ -17,8 +17,10 @@
     <file url="file://$PROJECT_DIR$/mybatis-06-annotation/plugin-lombok/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mybatis-06-annotation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mybatis-06-annotation/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/mybatis-07-ComplexSql/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/mybatis-07-ComplexSql/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-07-ComplexSqlManyToOne/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-07-ComplexSqlManyToOne/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-08-ComplexSqlOneToMany/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-08-ComplexSqlOneToMany/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/plugin-lombok/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/plugin-lombok/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
