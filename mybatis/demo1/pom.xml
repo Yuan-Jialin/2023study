@@ -19,6 +19,7 @@
         <module>plugin-lombok</module>
         <module>mybatis-07-ComplexSqlManyToOne</module>
         <module>mybatis-08-ComplexSqlOneToMany</module>
+        <module>mybatis-09-DynamicSql</module>
 
 
     </modules>
