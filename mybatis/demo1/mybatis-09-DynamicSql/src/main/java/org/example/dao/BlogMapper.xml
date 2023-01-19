@@ -16,9 +16,9 @@
 
     <select id="queryBlogIF" parameterType="map" resultType="blog">
         select * from blog
-        where 1=1
+        <where>
         <if test="title !=null">
-            and title=#{title}
+             title=#{title}
         </if>
         <if test="author !=null">
             and author=#{author}
@@ -26,9 +26,56 @@
         <if test="id!=null">
             and id=#{id}
         </if>
-            ;
+        </where>
+        ;
     </select>
 
+    <select id="queryBlogChoose" parameterType="map" resultType="blog">
+        select * from blog
 
+        <choose>
+            <when test="title!=null">
+               where title=#{title}
+            </when>
+            <when test="author!=null">
+                where author=#{author}
+            </when>
+
+            <otherwise>
+
+            </otherwise>
+            
+        </choose>
+    </select>
+    
+    <sql id="ppp">
+        update blog
+        <set>
+            <if test="title!=null">
+                title=#{title},
+            </if>
+            <if test="id!=null">
+                id=#{id},
+            </if>
+            <if test="author!=null">
+                author=#{author},
+            </if>
+        </set>
+        where title=#{name}
+    </sql>
+
+    <update id="UpdateBlog" parameterType="blog">
+
+        <include refid="ppp"></include>
+    </update>
+
+    <select id="queryBlogForeach" parameterType="map" resultType="blog">
+        select * from blog
+        <where>
+            <foreach collection="ids" item="id" open="and (" close=")" separator="or">
+                id=#{id}
+            </foreach>
+        </where>
+    </select>
 
 </mapper>

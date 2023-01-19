@@ -9,4 +9,10 @@ public interface BlogMapper {
 
     int addBlog(Blog blog);
     List<Blog> queryBlogIF(Map map);
+
+    int UpdateBlog(Map map);
+    List<Blog>queryBlogChoose(Map map);
+
+    List<Blog> queryBlogForeach(Map map);
+
 }
