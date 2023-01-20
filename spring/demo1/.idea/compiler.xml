@@ -12,9 +12,11 @@
         <module name="spring-04-Di" />
         <module name="spring-10-aop" />
         <module name="spring-08-StaticProxy" />
+        <module name="spring-12-mybatisAndSpring" />
         <module name="AutowiredByAnnotation" />
         <module name="spring-08-proxy" />
         <module name="spring-06-AutoWired" />
+        <module name="spring-13-transactionManage" />
         <module name="spring-11-AopByAnnotation" />
         <module name="spring-08-AllByAnnotation" />
         <module name="MostlyThroughAnnotations" />

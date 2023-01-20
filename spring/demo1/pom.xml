@@ -26,6 +26,8 @@
         <module>spring-09-DynamicProoxy</module>
         <module>spring-10-aop</module>
         <module>spring-11-AopByAnnotation</module>
+        <module>spring-12-mybatisAndSpring</module>
+        <module>spring-13-transactionManage</module>
 
 
     </modules>

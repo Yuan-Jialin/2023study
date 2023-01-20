@@ -5,5 +5,9 @@
     <file url="file://$PROJECT_DIR$/spring-10-aop/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-11-AopByAnnotation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-11-AopByAnnotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-12-mybatisAndSpring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-12-mybatisAndSpring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-13-transactionManage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-13-transactionManage/src/main/resources" charset="UTF-8" />
   </component>
 </project>
