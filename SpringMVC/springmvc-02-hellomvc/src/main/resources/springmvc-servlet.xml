@@ -10,5 +10,7 @@
             <property name="prefix" value="/WEB-INF/jsp/"/>
             <property name="suffix" value=".jsp" />
         </bean>
+
+<!--    handlermapping  根据这个寻找处理器-->
     <bean id="/hello" class="org.example.HelloController"/>
 </beans>

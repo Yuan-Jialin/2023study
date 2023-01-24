@@ -1,10 +1,11 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="hellomvc">
-    <output-path>$PROJECT_DIR$/out/artifacts/hellomvc</output-path>
+  <artifact type="exploded-war" name="springmvc-04-SpringByAnnotation:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/springmvc_04_SpringByAnnotation_war_exploded</output-path>
     <root id="root">
+      <element id="javaee-facet-resources" facet="springmvc-04-SpringByAnnotation/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="springmvc-02-hellomvc" />
+          <element id="module-output" name="springmvc-04-SpringByAnnotation" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.2" />
@@ -22,7 +23,6 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.1.9.RELEASE" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="springmvc-02-hellomvc/web/Web" />
     </root>
   </artifact>
 </component>
