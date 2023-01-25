@@ -2,7 +2,6 @@
   <artifact type="exploded-war" name="springmvc-03-RecallSpringMvc:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/springmvc_03_RecallSpringMvc_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="springmvc-03-RecallSpringMvc/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="springmvc-03-RecallSpringMvc" />
@@ -23,6 +22,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.1.9.RELEASE" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="springmvc-03-RecallSpringMvc/web/Web" />
     </root>
   </artifact>
 </component>

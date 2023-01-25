@@ -1,10 +1,11 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="springmvc-05-restful:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/springmvc_05_restful_war_exploded</output-path>
+  <artifact type="exploded-war" name="springmvc-06-ForwardAndRedirct:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/springmvc_06_ForwardAndRedirct_war_exploded</output-path>
     <root id="root">
+      <element id="javaee-facet-resources" facet="springmvc-06-ForwardAndRedirct/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="springmvc-05-restful" />
+          <element id="module-output" name="springmvc-06-ForwardAndRedirct" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.2" />
@@ -22,7 +23,6 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.1.9.RELEASE" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="springmvc-05-restful/web/Web" />
     </root>
   </artifact>
 </component>

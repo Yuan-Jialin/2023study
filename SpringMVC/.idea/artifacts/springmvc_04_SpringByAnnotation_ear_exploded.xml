@@ -2,10 +2,10 @@
   <artifact type="exploded-ear" name="springmvc-04-SpringByAnnotation:ear exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/springmvc_04_SpringByAnnotation_ear_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="springmvc-04-SpringByAnnotation/javaeeApplication/javaEEApplication" />
       <element id="directory" name="web.war">
         <element id="artifact" artifact-name="springmvc-04-SpringByAnnotation:war exploded" />
       </element>
+      <element id="javaee-facet-resources" facet="springmvc-04-SpringByAnnotation/javaeeApplication/javaEEApplication" />
     </root>
   </artifact>
 </component>

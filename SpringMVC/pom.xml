@@ -14,6 +14,7 @@
         <module>springmvc-03-RecallSpringMvc</module>
         <module>springmvc-04-SpringByAnnotation</module>
         <module>springmvc-05-restful</module>
+        <module>springmvc-06-ForwardAndRedirct</module>
 
     </modules>
 
