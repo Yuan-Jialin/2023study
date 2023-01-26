@@ -15,6 +15,7 @@
         <module>springmvc-04-SpringByAnnotation</module>
         <module>springmvc-05-restful</module>
         <module>springmvc-06-ForwardAndRedirct</module>
+        <module>springmvc-07-JSON</module>
 
     </modules>
 

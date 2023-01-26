@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="springmvc-07-JSON:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/springmvc_07_JSON_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="springmvc-07-JSON/javaeeApplication/javaEEApplication" />
+      <element id="directory" name="web.war">
+        <element id="artifact" artifact-name="springmvc-07-JSON:war exploded" />
+      </element>
+    </root>
+  </artifact>
+</component>

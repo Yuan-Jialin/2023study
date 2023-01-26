@@ -2,10 +2,10 @@
   <artifact type="exploded-ear" name="springmvc-06-ForwardAndRedirct:ear exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/springmvc_06_ForwardAndRedirct_ear_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="springmvc-06-ForwardAndRedirct/javaeeApplication/javaEEApplication" />
       <element id="directory" name="web.war">
         <element id="artifact" artifact-name="springmvc-06-ForwardAndRedirct:war exploded" />
       </element>
+      <element id="javaee-facet-resources" facet="springmvc-06-ForwardAndRedirct/javaeeApplication/javaEEApplication" />
     </root>
   </artifact>
 </component>
