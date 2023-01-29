@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/ssmbook?useSSL=false&amp;serverTimezone=Asia/Shanghai"/>
+        <property name="username" value="root"/>
+        <property name="password" value="mysql"/>
+    </bean>
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="datasource"/>
+        <!--也可以读取xml文件进行配置-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+
+        <property name="mapperLocations" value="classpath:org/example/dao/BookMapper.xml"/>
+        <!-- 相当于
+            <mappers>
+                <mapper resource="org/example/dao/UserMapper.xml"/>
+            </mappers>     -->
+    </bean>
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <!--       使用有参的构造方法 是因为没有set 无法通过property进行注入 -->
+      <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+
+    <bean id="BookMapperImpl" class="org.example.dao.BookMapperImpl">
+        <property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
+    </bean>
+
+
+
+
+</beans>
