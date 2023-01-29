@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.pojo.User;
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-// @RestController @control 换成这个 相当于 下面所有方法全部加了 @ResponseBody
+@RestController //@control 换成这个 相当于 下面所有方法全部加了 @ResponseBody
 @Controller
 public class UserController {
 
@@ -20,6 +21,13 @@ public class UserController {
         ObjectMapper mapper=new ObjectMapper();
         String s = mapper.writeValueAsString(user);
 
+        return s;
+    }
 
+    @RequestMapping(value = "/fastjson")
+    public String fastjson(){
+        User user=new User(3,"杨帆","男");
+        String s = JSON.toJSONString(user);
+        return s;
     }
 }
