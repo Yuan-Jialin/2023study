@@ -19,7 +19,7 @@ public class BookServiceImpl implements bookService{
 
     @Override
     public int addBook(Books books) {
-        return 0;
+        return bookMapper.addBook(books);
     }
 
     @Override
