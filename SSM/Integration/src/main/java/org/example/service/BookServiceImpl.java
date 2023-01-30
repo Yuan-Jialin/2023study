@@ -1,10 +1,21 @@
 package org.example.service;
 
+import org.example.dao.BookMapper;
 import org.example.pojo.Books;
 
 import java.util.List;
 
 public class BookServiceImpl implements bookService{
+
+    BookMapper bookMapper;
+
+    public BookMapper getBookMapper() {
+        return bookMapper;
+    }
+
+    public void setBookMapper(BookMapper bookMapper) {
+        this.bookMapper = bookMapper;
+    }
 
     @Override
     public int addBook(Books books) {
