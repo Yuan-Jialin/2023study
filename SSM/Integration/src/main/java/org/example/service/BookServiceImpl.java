@@ -9,10 +9,7 @@ public class BookServiceImpl implements bookService{
 
     BookMapper bookMapper;
 
-    public BookMapper getBookMapper() {
-        return bookMapper;
-    }
-
+    
     public void setBookMapper(BookMapper bookMapper) {
         this.bookMapper = bookMapper;
     }
