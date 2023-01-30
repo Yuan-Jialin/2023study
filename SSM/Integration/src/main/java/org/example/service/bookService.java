@@ -1,4 +1,8 @@
 package org.example.service;
 
-public class bookService {
+import org.example.dao.BookMapper;
+
+public interface bookService {
+
+
 }
