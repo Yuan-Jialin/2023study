@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="datasource.properties"/>
+
+    <bean id="datasource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+
+        <property name="driverClass" value="${jdbc.driver}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="user" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="datasource"/>
+        <!--也可以读取xml文件进行配置-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+
+<!--        <property name="mapperLocations" value="classpath:org/example/dao/BookMapper.xml"/>-->
+        <!-- 相当于
+            <mappers>
+                <mapper resource="org/example/dao/UserMapper.xml"/>
+            </mappers>     -->
+    </bean>
+
+
+    <!--添加了这个过后 BookMapperImpl这样类就可以不用写了-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+        <property name="basePackage" value="org.example.dao"/>
+    </bean>
+   <!-- <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        &lt;!&ndash;       使用有参的构造方法 是因为没有set 无法通过property进行注入 &ndash;&gt;
+        <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+
+    <bean id="BookMapperImpl" class="org.example.dao.BookMapperImpl">
+        <property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
+    </bean>-->
+
+
+
+
+</beans>
