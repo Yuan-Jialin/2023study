@@ -13,4 +13,17 @@ public class test {
         System.out.println(bookServiceImpl.queryAllBook().toString());
 
     }
+
+    @Test
+    public void test(){
+        int n=9;
+        int a[]=new int[n];
+        for(int i=0;i<n;i++)
+            a[i]=i;
+        array(a);
+    }
+
+    public void array(int a[]){
+        System.out.println(a[2]);
+    }
 }

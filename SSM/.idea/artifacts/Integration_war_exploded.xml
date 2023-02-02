@@ -2,7 +2,6 @@
   <artifact type="exploded-war" name="Integration:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/Integration_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="Integration/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="Integration" />
@@ -32,6 +31,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.1.10.RELEASE" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="Integration/web/Web" />
     </root>
   </artifact>
 </component>

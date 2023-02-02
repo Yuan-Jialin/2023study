@@ -1,0 +1,19 @@
+
+target/
+
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+
+
+
+
+### NetBeans ###
+
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
