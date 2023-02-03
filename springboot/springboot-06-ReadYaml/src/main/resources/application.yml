@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+country: china
+
+user1:
+  name: 杨帆
+
+hoppy:
+  - eat
+  - sleep
+  - play
+
+
+app: ${hoppy[1]}dog
+

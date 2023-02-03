@@ -2,19 +2,35 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-01-first" />
+        <module name="springboot-06-ReadYaml" />
+        <module name="springboot-05-BaseConfiguration" />
+        <module name="demo" />
+        <module name="springboot-03-GuidanceClass" />
         <module name="springboot-02-firstByHand" />
+        <module name="springboot-04-jetty" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="17" />
+      <module name="readYaml" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
+      <module name="readYaml" options="-parameters" />
       <module name="springboot-01-first" options="-parameters" />
       <module name="springboot-02-firstByHand" options="-parameters" />
+      <module name="springboot-03-GuidanceClass" options="-parameters" />
+      <module name="springboot-04-jetty" options="-parameters" />
+      <module name="springboot-05-BaseConfiguration" options="-parameters" />
+      <module name="springboot-06-ReadYaml" options="-parameters" />
     </option>
   </component>
 </project>
