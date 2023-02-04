@@ -14,3 +14,8 @@ hoppy:
 
 app: ${hoppy[1]}dog
 
+datasource:
+  driver: com.mysql.jdbc.Driver
+  username: root
+  password: mysql
+

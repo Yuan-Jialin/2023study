@@ -5,19 +5,19 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/springboot-04-jetty" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/springboot-09-mybatisplus" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/springboot-04-jetty" />
+            <option value="$PROJECT_DIR$/springboot-09-mybatisplus" />
           </set>
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/springboot-06-readYaml" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/srpingboot-11-ssmp" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/springboot-06-readYaml" />
+            <option value="$PROJECT_DIR$/srpingboot-11-ssmp" />
           </set>
         </option>
       </GradleProjectSettings>

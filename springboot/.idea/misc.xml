@@ -3,7 +3,11 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/springboot-04-jetty" />
-    <file type="web" url="file://$PROJECT_DIR$/springboot-06-readYaml" />
+    <file type="web" url="file://$PROJECT_DIR$/springboot-06-ReadYaml" />
+    <file type="web" url="file://$PROJECT_DIR$/springboot-07-junit" />
+    <file type="web" url="file://$PROJECT_DIR$/springboot-09-mybatisplus" />
+    <file type="web" url="file://$PROJECT_DIR$/srpingboot-11-ssmp" />
+    <file type="web" url="file://$PROJECT_DIR$/test" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -15,10 +19,15 @@
         <option value="$PROJECT_DIR$/springboot-04-jetty/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-05-BaseConfiguration/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-06-ReadYaml/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-07-junit/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-08-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-09-mybatisplus/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-10-Druid/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-11-ssmp/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="true" project-jdk-name="14" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

@@ -10,6 +10,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>springboot-02-firstByHand</module>
+        <module>springboot-07-junit</module>
+        <module>springboot-09-mybatisplus</module>
+        <module>springboot-11-ssmp</module>
     </modules>
 
     <properties>
@@ -17,5 +20,12 @@
         <maven.compiler.target>14</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+        </dependency>
+    </dependencies>
 
 </project>
