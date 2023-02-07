@@ -56,5 +56,11 @@ class ApplicationTests {
         System.out.println(books);
     }
 
+    @Test
+    void TestGetBookByName(){
+        books 人民万岁 = bookMapper.getBookByName("人民万岁");
+        System.out.println(人民万岁.toString());
+    }
+
 
 }
