@@ -1,6 +1,7 @@
 package com.example.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.example.controller.utils.R;
 import com.example.pojo.books;
 import com.example.service.IBookService;
 import org.intellij.lang.annotations.JdkConstants;
@@ -15,25 +16,24 @@ public class BookController {
     @Autowired
     private IBookService iBookService;
     @GetMapping("/select")
-    public List<books> getAllBook(){
-
-        return iBookService.list();
+    public R getAllBook(){
+        return new R(true,iBookService.list());
     }
 
     @PostMapping("save")
-    public boolean saveBook(books book){
-        return iBookService.save(book);
+    public R saveBook(books book){
+        return new R(iBookService.save(book),null);
     }
 
     @GetMapping("/select/{id}")
-    public books getBookById(@PathVariable Integer id){
-        return iBookService.getById(id);
+    public R getBookById(@PathVariable Integer id){
+        return new R(true,iBookService.getById(id));
     }
 
     @GetMapping("/select/{a}/{b}")
-    public IPage<books> getPage(@PathVariable("a") int CurrentPage,@PathVariable("b") int PageSize){
+    public R getPage(@PathVariable("a") int CurrentPage,@PathVariable("b") int PageSize){
         IPage<books> page = iBookService.getPage(CurrentPage, PageSize);
-        return page;
+        return new R(true,page);
 
     }
 
