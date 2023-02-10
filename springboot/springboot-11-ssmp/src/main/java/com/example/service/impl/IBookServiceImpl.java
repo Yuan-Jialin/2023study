@@ -1,5 +1,6 @@
 package com.example.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -10,6 +11,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.security.Provider;
+import java.util.List;
+/*
+* 打到习近平
+* 反对习近平独裁
+* 人民万岁
+* */
 @Service
 public class IBookServiceImpl extends ServiceImpl<BookMapper, books> implements IBookService {
     @Autowired
@@ -21,5 +28,9 @@ public class IBookServiceImpl extends ServiceImpl<BookMapper, books> implements 
 
     public IPage<books> getPage(int CurrentPage,int PageSize){
        return bookMapper.selectPage(new Page<books>(CurrentPage,PageSize),null);
+    }
+
+    public List<books> Myquery(QueryWrapper v){
+        return bookMapper.selectList(v);
     }
 }
