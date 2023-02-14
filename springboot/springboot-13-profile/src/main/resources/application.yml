@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: test
+  #可以写公共配置
+
+
+
+---
+spring:
+  profiles: pro
+    #生产环境
+
+server:
+  port: 8080
+
+---
+spring:
+  profiles: dev
+# 开发环境
+server:
+  port: 8081
+---
+#测试环境
+
+server:
+  port: 8082
+spring:
+  config:
+    activate:
+      on-profile: test

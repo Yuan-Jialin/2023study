@@ -7,18 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-07-junit" />
-        <module name="springboot-01-first" />
         <module name="springboot-10-Druid" />
-        <module name="springboot-06-ReadYaml" />
         <module name="springboot-09-mybatisplus" />
         <module name="springboot-08-mybatis" />
+        <module name="springboot-14-profile" />
         <module name="springboot-11-ssmp" />
-        <module name="springboot-05-BaseConfiguration" />
+        <module name="springboot-12-config" />
+        <module name="springboot-13-profile" />
         <module name="demo" />
-        <module name="springboot-03-GuidanceClass" />
         <module name="springboot-02-firstByHand" />
         <module name="springboot-04-jetty" />
+        <module name="springboot-07-junit" />
+        <module name="springboot-01-first" />
+        <module name="springboot-06-ReadYaml" />
+        <module name="springboot-05-BaseConfiguration" />
+        <module name="springboot-03-GuidanceClass" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -41,6 +44,9 @@
       <module name="springboot-09-mybatisplus" options="-parameters" />
       <module name="springboot-10-Druid" options="-parameters" />
       <module name="springboot-11-ssmp" options="-parameters" />
+      <module name="springboot-12-config" options="-parameters" />
+      <module name="springboot-13-profile" options="-parameters" />
+      <module name="springboot-14-profile" options="-parameters" />
     </option>
   </component>
 </project>

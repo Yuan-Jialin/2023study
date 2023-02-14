@@ -24,6 +24,9 @@
         <option value="$PROJECT_DIR$/springboot-09-mybatisplus/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-10-Druid/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-11-ssmp/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-12-config/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-13-profile/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-14-profile/pom.xml" />
       </list>
     </option>
   </component>
