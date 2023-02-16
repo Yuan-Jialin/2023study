@@ -25,65 +25,29 @@ public class Main {
 }
 
 class Solution {
-    public List<List<Integer>> levelOrder(TreeNode root) {
-        if (root == null)
-            return new ArrayList<>();
+    public boolean isSymmetric(TreeNode root) {
 
-        List<List<Integer>> ans = new ArrayList<>();
-        Stack<TreeNodePlus>s=new Stack<>();
-        Stack<TreeNodePlus>p=new Stack<>();
-        List<Integer>v=new ArrayList<>();
-        int f=1;
-        s.add(new TreeNodePlus(root,1));
-        while (!s.isEmpty()){
-            if(s.isEmpty())
-            {
-                s=p;
-                for (TreeNodePlus treeNodePlus : p) {
-                    System.out.printf(String.valueOf(treeNodePlus.treeNode.val));
-                }
-                for (TreeNodePlus treeNodePlus : s) {
-                    System.out.printf(String.valueOf(treeNodePlus.treeNode.val));
-                }
-                p=new Stack();
-            }
-
-            TreeNodePlus pop = s.pop();
-            if(pop.f!=f){
-                ans.add(v);
-                v=new ArrayList<>();
-                f++;
-            }
-            v.add(pop.treeNode.val);
-            if(f%2==1){
-                if(pop.treeNode.left!=null)
-                    s.add(new TreeNodePlus(pop.treeNode.left,f+1));
-                if(pop.treeNode.right!=null)
-                    s.add(new TreeNodePlus(pop.treeNode.right,f+1));
-            }
-            else{
-                if(pop.treeNode.right!=null)
-                    s.add(new TreeNodePlus(pop.treeNode.right,f+1));
-                if(pop.treeNode.left!=null)
-                    s.add(new TreeNodePlus(pop.treeNode.left,f+1));
-            }
-
-
-        }
-
-return ans;
+        return compare(root.left,root.right);
     }
-}
 
-class TreeNodePlus {
+    public boolean compare(TreeNode a,TreeNode b){
 
-    TreeNode treeNode;
-    int f;
+       if(a==null&&b==null)
+           return true;
+       if(a==null)
+           return false;
+       if(b==null)
+           return false;
 
-    public TreeNodePlus(TreeNode treeNode, int f) {
-        this.treeNode = treeNode;
-        this.f = f;
+       return a.val==b.val&&compare(a.left,b.right)&&compare(a.right,b.left);
+
+
     }
+
+
+
+
+
 }
 
 class TreeNode {
