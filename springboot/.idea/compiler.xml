@@ -14,6 +14,7 @@
         <module name="springboot-11-ssmp" />
         <module name="springboot-12-config" />
         <module name="springboot-13-profile" />
+        <module name="springboot-15-hotDeploy" />
         <module name="demo" />
         <module name="springboot-02-firstByHand" />
         <module name="springboot-04-jetty" />
@@ -47,6 +48,7 @@
       <module name="springboot-12-config" options="-parameters" />
       <module name="springboot-13-profile" options="-parameters" />
       <module name="springboot-14-profile" options="-parameters" />
+      <module name="springboot-15-hotDeploy" options="-parameters" />
     </option>
   </component>
 </project>
