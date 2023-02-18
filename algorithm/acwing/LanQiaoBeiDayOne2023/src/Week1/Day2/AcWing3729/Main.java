@@ -35,3 +35,17 @@ public class Main {
         }
     }
 }
+
+class Solution {
+    public int maxSubArray(int[] nums) {
+        Scanner sc=new Scanner(System.in);
+        if(nums.length==0)
+            return 0;
+        int ans=Integer.MIN_VALUE;
+        for(int i=1;i<nums.length;i++){
+            nums[i]+=Math.max(0,nums[i-1]);
+            ans=Math.max(ans,nums[i]);
+        }
+        return ans;
+    }
+}
