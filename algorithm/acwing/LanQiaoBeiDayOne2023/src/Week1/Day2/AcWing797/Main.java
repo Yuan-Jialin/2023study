@@ -28,4 +28,29 @@ public class Main {
             System.out.printf("%d ", a[i]);
     }
 }
+class Solution {
+    public ListNode getKthFromEnd(ListNode head, int k) {
+        int all=0;
+        ListNode p=head;
+        while (p!=null){
+            all++;
+            p=p.next;
+        }
+        p=head;
+        all=all-k+1;
+        while (all-->0){
+            p=p.next;
+        }
+        return p;
+
+    }
+}
+
+
+class ListNode {
+    int val;
+   ListNode next;
+   ListNode(int x) { val = x; }
+ }
+
 
