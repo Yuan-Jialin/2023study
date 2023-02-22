@@ -1,7 +1,9 @@
 package Week1.Day1.Acwing3956;
 
 
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,5 +36,21 @@ public class Main {
             System.out.println(ans);
         else
             System.out.println(0);
+    }
+}
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int biao[]=new int[1000000+2];
+        int ans[]=new int[2];
+        for(int i=0;i<nums.length;i++){
+            int a=target-nums[i];
+            if(biao[a]==1){
+                ans[0]=a;
+                ans[1]=nums[i];
+                return ans;
+            }
+            biao[nums[i]]=1;
+        }
+        return ans;
     }
 }

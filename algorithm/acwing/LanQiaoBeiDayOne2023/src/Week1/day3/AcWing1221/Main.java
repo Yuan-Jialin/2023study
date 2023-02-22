@@ -2,6 +2,7 @@ package Week1.day3.AcWing1221;
 
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -39,3 +40,58 @@ public class Main {
         }
     }
 }
+
+class Solution {
+    ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        headA = reverse(headA);
+        headB = reverse(headB);
+        ListNode a = headA;
+        while (a != null) {
+            System.out.printf("%d ", a.val);
+            a=a.next;
+        }
+        ListNode b=headB;
+        while (b != null) {
+            System.out.printf("%d ", b.val);
+            b=b.next;
+        }
+        if(headA.val!=headB.val)
+            return null;
+        while (headA!=null&&headB!=null){
+            if(headA.next==null||headB.next==null)
+                return null;
+            if(headA.next.val!=headB.next.val)
+                return headA;
+            headA=headA.next;
+            headB=headB.next;
+        }
+        return null;
+    }
+
+    ListNode reverse(ListNode a) {
+        if (a == null)
+            return null;
+        ListNode b = a.next;
+        ListNode c;
+        while (b != null) {
+            b = a.next;
+            c = b.next;
+            b.next = a;
+            a = b;
+            b = c;
+        }
+        return a;
+    }
+
+}
+
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int x) {
+        val = x;
+        this.next = null;
+    }
+}
+

@@ -30,3 +30,17 @@ public class Main {
 
     }
 }
+
+class Solution {
+    public String reverseWords(String s) {
+        String[] s1 = s.split(" ");
+        String ans="";
+        for(int i=s1.length-1;i>=0;i--)
+        {
+            ans+=s1[i];
+            System.out.println(s1[i]);
+            if(i!=0) ans+=" ";
+        }
+        return ans;
+    }
+}

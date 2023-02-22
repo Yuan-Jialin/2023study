@@ -27,3 +27,21 @@ public class Main {
         System.out.println(Math.abs(max - min) + 1);
     }
 }
+class Solution {
+    public int[] exchange(int[] nums) {
+         int n=nums.length;
+         for(int i=0,j=n-1;i<j;){
+             while (nums[i]%2==1&&i<j)
+             {
+                 i++;
+             }
+             while (nums[j]%2==0&&i<j){
+                 j--;
+             }
+             int a=nums[i];
+             nums[i]=nums[j];
+             nums[j]=a;
+         }
+         return nums;
+    }
+}
