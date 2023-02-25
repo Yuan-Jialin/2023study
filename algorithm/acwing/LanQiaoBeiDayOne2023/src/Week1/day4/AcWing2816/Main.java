@@ -1,5 +1,7 @@
 package Week1.day4.AcWing2816;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -26,5 +28,32 @@ public class Main {
         }
         if (i == 0) System.out.println("Yes");
         else System.out.println("No");
+    }
+}
+
+class Solution {
+    public boolean isStraight(int[] nums) {
+        int all=0;
+        Arrays.sort(nums);
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==0){
+                all++;
+            } else if (i==0) {
+                continue;
+            } else if (nums[i]==nums[i-1]+1) {
+                continue;
+            } else if (nums[i]==nums[i-1]) {
+                return false;
+
+            } else{
+                int cha =nums[i]-nums[i-1]-1;
+                if(all>=cha){
+                    all-=cha;
+                }
+                else
+                    return false;
+            }
+        }
+        return true;
     }
 }
