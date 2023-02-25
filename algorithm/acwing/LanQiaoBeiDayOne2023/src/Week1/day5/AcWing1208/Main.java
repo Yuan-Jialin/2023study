@@ -1,5 +1,6 @@
 package Week1.day5.AcWing1208;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 /**
@@ -30,3 +31,47 @@ public class Main {
         System.out.println(ans);
     }
 }
+
+class Solution {
+
+    int idx;
+    int midorder[];
+    int afterorder[];
+
+    HashMap<Integer,Integer>v=new HashMap<>();
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
+        this.midorder=inorder;
+        this.afterorder=postorder;
+        int idx=postorder.length-1;
+        for(int i=0;i<inorder.length;i++)
+            v.put(inorder[i],i);
+        return build(0,idx);
+    }
+    public TreeNode build(int left,int right){
+
+        TreeNode head=new TreeNode(afterorder[idx]);
+
+        Integer mid = v.get(afterorder[idx]);
+
+        idx--;
+
+        head.right=build(mid+1,right);
+        head.left=build(left,mid-1);
+        return head;
+
+    }
+
+}
+
+class TreeNode {
+      int val;
+      TreeNode left;
+      TreeNode right;
+      TreeNode() {}
+      TreeNode(int val) { this.val = val; }
+      TreeNode(int val, TreeNode left, TreeNode right) {
+          this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+  }
