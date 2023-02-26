@@ -59,7 +59,10 @@ class Solution {
                 stack.push(node.right);
             } else {
                 while (!stack.isEmpty() && stack.peek().val == inorder[inorderIndex]) {
+
+
                     node = stack.pop();
+                    System.out.println(node.val+" "+inorder[inorderIndex]);
                     inorderIndex--;
                 }
                 node.left = new TreeNode(postorderVal);
