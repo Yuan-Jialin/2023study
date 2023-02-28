@@ -13,6 +13,7 @@
         <module>springboot-07-junit</module>
         <module>springboot-09-mybatisplus</module>
         <module>springboot-11-ssmp</module>
+        <module>springboot-17-test</module>
 
     </modules>
 

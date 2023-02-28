@@ -1,0 +1,18 @@
+server:
+  port: 8089
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ssmbook?useSSL=false
+    username: root
+    password: mysql
+
+testcase:
+  book:
+    id: ${random.int}
+    id2: ${random.int(10)}
+    id3: ${random.int(5,10}
+    bookname: ${random.value}
+    bookCounts: ${random.int}
+    detail: ${random.value}

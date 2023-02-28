@@ -71,6 +71,68 @@ class Solution {
         }
         return root;
     }
+
+    public int maxDepth(TreeNode root) {
+        if(root==null)
+            return 0;
+        else return 1+Math.max(maxDepth(root.left),maxDepth(root.right));
+    }
+
+    boolean ans=true;
+    public boolean isBalanced(TreeNode root) {
+
+        getDept(root);
+        return ans;
+
+    }
+
+    public int getDept(TreeNode root){
+        if(root==null)
+            return 0;
+        else {
+            int n=getDept(root.left);
+            int m=getDept(root.right);
+            if(Math.abs(n-m)>1)
+                ans=false;
+            return 1+Math.max(n,m);
+        }
+
+
+    }
+    TreeNode treeNode;
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+
+       dfs(root, p, q);
+
+       return treeNode;
+
+    }
+
+    public int[] dfs(TreeNode root,TreeNode p,TreeNode q){
+        int a[]=new int[2];
+        int b[]=new int[2];
+        if(root.left!=null)
+        a=dfs(root.left,p,q);
+        if(root.right!=null)
+        b=dfs(root.right,p,q);
+
+        int ans[]=new int[2];
+        if(root.val==p.val)
+            ans[0]=1;
+        if(root.val==q.val)
+            ans[1]=1;
+        if(a[0]==1||b[0]==1)
+            ans[0]=1;
+        if(b[1]==1||a[1]==1)
+            ans[1]=1;
+        if(ans[0]==1&&ans[1]==1&&treeNode==null)
+        {
+            treeNode=root;
+        }
+        return ans;
+    }
+
+
 }
 class TreeNode {
     int val;
