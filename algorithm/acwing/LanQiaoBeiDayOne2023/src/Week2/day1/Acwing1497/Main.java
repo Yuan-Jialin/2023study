@@ -1,4 +1,4 @@
-package Week2.day1;
+package Week2.day1.Acwing1497;
 
 import java.util.*;
 
