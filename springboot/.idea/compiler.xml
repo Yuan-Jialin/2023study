@@ -23,6 +23,7 @@
         <module name="springboot-07-junit" />
         <module name="springboot-01-first" />
         <module name="springboot-06-ReadYaml" />
+        <module name="springboot-18-redis" />
         <module name="springboot-05-BaseConfiguration" />
         <module name="springboot-03-GuidanceClass" />
       </profile>
@@ -53,6 +54,7 @@
       <module name="springboot-15-hotDeploy" options="-parameters" />
       <module name="springboot-16-configuration" options="-parameters" />
       <module name="springboot-17-test" options="-parameters" />
+      <module name="springboot-18-redis" options="-parameters" />
     </option>
   </component>
 </project>
