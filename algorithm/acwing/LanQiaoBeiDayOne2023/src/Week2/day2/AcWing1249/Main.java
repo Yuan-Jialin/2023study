@@ -1,6 +1,8 @@
 package Week2.day2.AcWing1249;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 
@@ -91,6 +93,23 @@ class Solution {
         }
         return ans;
     }
+
+
+        public int lastRemaining(int n, int m) {
+                return f(m,n);
+        }
+        //f表示，对于有n个数的数组，每次按题目要求删后，剩下的数的下标
+        int f(int m,int n){
+        if(n==1)
+            return 0;
+        int x=f(m-1,n);
+        //删除掉低m-1的数后，还剩下一个n-1的数组，x是对于一个n-1的数组最后剩下来的数的下标，也就是从开始数了x+1个数
+            //删掉 m-1 后 下标就从m开始
+        return ((m-1)+x+1)%n;
+        }
+
+
+
 
 }
 

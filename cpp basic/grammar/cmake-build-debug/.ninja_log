@@ -1,0 +1,21 @@
+# ninja log v5
+1	484	6997069005481560	CMakeFiles/grammar.dir/main.cpp.obj	c12d9d7967fe49
+3	514	6997094082454255	CMakeFiles/exchange.dir/constAsReturn.cpp.obj	33af00d30d1c1144
+4	558	6997073795383341	CMakeFiles/grammar.dir/exchange.cpp.obj	bb5380ec886b027b
+3	130	6997079311012721	CMakeFiles/CMakeCXXCompilerId.dir/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj	c39e888fec13c167
+1	272	6997094955243586	build.ninja	398840c53eacd818
+131	286	6997079312518754	CMakeCXXCompilerId.exe	cdcc852252787689
+13	523	6997079314939398	CMakeFiles/main.dir/main.cpp.obj	70b22ebd7884ef09
+3	484	6997080974223223	CMakeFiles/exchange.dir/exchange.cpp.obj	96aaea6417ad1bc0
+485	641	6997080975753482	exchange.exe	44089db35454340f
+523	676	6997079316439631	main.exe	2a3a9ab7b148f478
+3	476	6997093869743136	CMakeFiles/constAsReturn.dir/constAsReturn.cpp.obj	ccc916b2325f8c20
+477	630	6997093871243377	constAsReturn.exe	e5fc1b093bfa40c5
+24	518	6997094082484255	CMakeFiles/main.dir/constAsReturn.cpp.obj	59445ac964086a48
+4	104	6997094970389070	CMakeFiles/constAsReturn.dir/main.cpp.obj	6bde2ee604ab82ec
+104	256	6997094971869499	constAsReturn.exe	8e1767d454a8aa2d
+3	111	6997095012393902	CMakeFiles/exchange.dir/main.cpp.obj	ae6cef9fad321c48
+14	118	6997095012463996	CMakeFiles/main.dir/main.cpp.obj	70b22ebd7884ef09
+112	266	6997095013904224	exchange.exe	3919cb3b1e45efe2
+3	485	6997095452205863	CMakeFiles/constAsReturn.dir/constAsReturn.cpp.obj	ccc916b2325f8c20
+486	643	6997095453741580	constAsReturn.exe	8e1767d454a8aa2d
