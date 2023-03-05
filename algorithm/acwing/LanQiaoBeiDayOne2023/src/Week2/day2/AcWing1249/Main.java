@@ -1,6 +1,7 @@
 package Week2.day2.AcWing1249;
 
 import java.io.*;
+import java.util.Random;
 
 
 /**
@@ -43,3 +44,53 @@ public class Main {
         return p[a];
     }
 }
+
+class Solution {
+    private int randRange(Random rand, int min, int max) {
+        return rand.nextInt(max - min) + min;
+    }
+
+    private int countOccurences(int[] nums, int num) {
+        int count = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == num) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public int majorityElement(int[] nums) {
+        Random rand = new Random();
+
+        int majorityCount = nums.length / 2;
+
+        while (true) {
+            int candidate = nums[randRange(rand, 0, nums.length)];
+            if (countOccurences(nums, candidate) > majorityCount) {
+                return candidate;
+            }
+        }
+    }
+
+    public int[] constructArr(int[] a) {
+        if(a==null||a.length==0)
+            return new int[0];
+        int n=a.length;
+        int ans[]=new int[n];
+        ans[0]=1;
+        for(int i=1;i<n;i++)
+        {
+            ans[i]=ans[i-1]*a[i-1];
+        }
+        int r=1;
+        for(int i=n-1;i>=0;i--)
+        {
+            ans[i]=ans[i]*r;
+            r*=a[i];
+        }
+        return ans;
+    }
+
+}
+
