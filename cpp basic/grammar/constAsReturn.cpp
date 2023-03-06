@@ -25,4 +25,11 @@ int main() {
     test2()=20;
     cout<<"!"<<pp<<endl;
 
+    const int &a=10;
+    //这段代码如果直接看是不合规的
+    //没报错是因为,编译帮我们对代码进行了修改
+    //将代码改为
+    //int temp;
+    // int &a=temp;
+    
 }
